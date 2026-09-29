@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Brandon Norman</title>
+  <meta name="description" content="Projects I have worked on.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="name" href="index.html">Brandon Norman</a>
+      <ul>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="paper.html">Paper</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap">
+      <h1>Projects</h1>
+      <p class="lede">
+        A selection of work I've done, with a short note on my part in it and links to where that project lives (if public-facing).
+      </p>
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="toc" aria-label="Projects">
+        <ul class="doc-list">
+          <li>
+            <a href="#project-one">
+              <span class="doc-title">3D Reconstruction of Coronary Angiograms</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project-two">
+              <span class="doc-title">Topography Collaboration</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project-three">
+              <span class="doc-title">Unity Networking Template</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project-four">
+              <span class="doc-title">Campus 360</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project-five">
+              <span class="doc-title">Slid3d</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ===== PROJECT TEMPLATE: One discrete project section ===== -->
+      <section class="project" id="project-one">
+        <h2>3D Reconstruction of Coronary Angiograms</h2>
+        <p class="project-meta">Lead Developer/Co-Designer &middot; Python, Google Colab, Unity, C#</p>
+        <p>
+          3D Reconstruction of Coronary Angiograms was an application tied to the EPSCoR DART initiative, and was the stepping stone for a later project. The goal was to bring a collection of 2-dimensional medical data into virtual reality, allowing users to navigate complex structures in a more natural way.
+        </p>
+        <p>
+          <strong>Contribution:</strong> As co-designer and lead developer, I was involved in this project from its earliest concepts through final delivery, working closely with Dr. Aryabrata Basu. I started by researching and prototyping a pipeline in Google Colab that converted coronary angiogram data into 3D models, ensuring scans were as accurately portrayed in 3d as possible. Once that approach proved viable, I designed and built an interactive virtual reality Unity application that lets users explore the resulting 3D data, including moving, rotating, and filtering out noisy parts of the data.
+        </p>
+        <ul class="project-links">
+          <li><a href="https://eac-services.host.ualr.edu/projects/epscor-dart-wp/epscor-dart-angiography/">Project on EAC Website</a></li>
+          <li><a href = "">Video Walkthrough</a></li>
+        </ul>
+        <a class="back-top" href="#top">&uarr; Back to top</a>
+      </section>
+      <!-- ===== END TEMPLATE ===== -->
+
+      <section class="project" id="project-two">
+        <h2>Topography Collaboration</h2>
+        <p class="project-meta">Maintainer/Developer &middot; C#, Unity</p>
+        <p>Originally built as a collboration between Dr. Krista Lewis and the EAC as a way to view a large LIDAR scan of a UNESCO World Heritage archaeological site in Oman, Topography Collaboration became a test-bed for multi-user, multi-control-scheme XR experiences. Users are able to connect to a central server with a variety of different XR capable devices, each user leveraging the unique abilities of their device to view and interact with the world. </p>
+        <p><strong>Contribution:</strong> I joined late in the development cycle of Topography Collaboration and for many years worked as a maintainer. My main responsibilities during this time included updating the Unity version of the application periodically, ensuring the devices used to demonstrate the application were prepared, and demonstrating the application for potential clients and curious students. Later in my tenure at the Emerging Analytics Center, I was asked to transition the back-end networking solution from Photon Unity Networking, to Mirror Networking.</p>
+        <ul class="project-links">
+          <li><a href="https://eac-services.host.ualr.edu/topography-collaboration-topocollo/">Project on EAC Website</a></li>
+        </ul>
+        <a class="back-top" href="#top">&uarr; Back to top</a>
+      </section>
+
+      <section class="project" id="project-three">
+        <h2>Unity Networking Template</h2>
+        <p class="project-meta"> Developer &middot; C#, Unity</p>
+        <p>Topography Collaboration recieved much interest from prospective clients, but lacked the abstraction to be easily integrated as a core feature of new projects. The Networking Template project was an effort to package the core features of Topography Collaboration into a drag-and-drop solution for future projects. It also included the ability to import 3D objects from a remote server to be displayed within the application.</p>
+        <p><strong>Contribution:</strong> Using the experience gained from transitioning Topography Collaboration to Mirror Networking, I developed the core of the template, focusing on generalized player models pilotable through any control scheme. I then integrated the remote 3D object import code with the template. Much of the development time was spent fixing bugs related to concurrency between the 3D objects imported into a scene.</p>
+        <a class="back-top" href="#top">&uarr; Back to top</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Brandon Norman</p>
+    </div>
+  </footer>
+</body>
+</html>
