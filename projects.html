@@ -23,7 +23,7 @@
     <div class="wrap">
       <h1>Projects</h1>
       <p class="lede">
-        A selection of work I've done, with a short note on my part in it and links to where that project lives (if public-facing).
+        A selection of work I've done, with a short note on my part in it and links to where that project lives (if public-facing). This is by no means and exhaustive list, simply some of my favorites where I did work I was proud of.
       </p>
 
       <!-- TABLE OF CONTENTS -->
@@ -31,34 +31,60 @@
         <ul class="doc-list">
           <li>
             <a href="#project-one">
-              <span class="doc-title">3D Reconstruction of Coronary Angiograms</span>
+              <span class="doc-title">Immersive Cardiac Segmentation and Analysis</span>
+              <span class="doc-meta">2025</span>
             </a>
           </li>
           <li>
             <a href="#project-two">
-              <span class="doc-title">Topography Collaboration</span>
-            </a>
-          </li>
-          <li>
-            <a href="#project-three">
-              <span class="doc-title">Unity Networking Template</span>
+              <span class="doc-title">3D Reconstruction of Coronary Angiograms</span>
+              <span class="doc-meta">2024</span>
             </a>
           </li>
           <li>
             <a href="#project-four">
-              <span class="doc-title">Campus 360</span>
+              <span class="doc-title">Unity Networking Template</span>
+              <span class="doc-meta">2023</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project-three">
+              <span class="doc-title">Topography Collaboration</span>
+              <span class="doc-meta">2019 - 2023</span>
             </a>
           </li>
           <li>
             <a href="#project-five">
-              <span class="doc-title">Slid3d</span>
+              <span class="doc-title">Campus 360</span>
+              <span class="doc-meta">2021</span>
             </a>
           </li>
         </ul>
       </nav>
 
+
+
+
+        <section class="project" id="project-one">
+        <h2>Immersive Cardiac Segmentation and Analysis</h2>
+        <p class="project-meta">Lead Developer/Designer &middot; Unity, C#, Python, MongoDB, SimVascular</p>
+        <p>
+          Immersive Cardiac Segmentation and Analysis was the result of an extension of EPSCoR DART funding for the 3D Reconstruction of Coronary Angiograms project. ICSA's goal was to allow users to create 3D models of coronary vessels from coronary CT scans and use computational fluid dynamics to simulate bloodflow through the vessels, all within virtual reality.
+        </p>
+        <p>
+          <strong>Contribution:</strong> Immersive Cardiac Segmentation and Analysis is the largest solo project I have developed. I was responsible for every element of the project, from initial research to delivery. I used Unity Volume Renderer to render CT scans in Unity, then built a model segmentation system for VR controls. I designed the pipeline for turning the segmentation data into 3D models, making use of the Vascular Modeling Toolkit. I used a Flask server to drive the conversion process, and created an accompanying API so that all information created in the application could be grouped with the initial CT scan in a MongoDB database. Lastly, I created a system for preparing models for fluid dynamic analysis, and viewing the results of that analysis in Unity.
+        </p>
+        <p>
+         Comprehensive coverage of what I did and how can be found in my thesis paper below.
+        </p>
+        <ul class="project-links">
+          <li><a href = "https://drive.google.com/file/d/16MtVOQ2P-GP72SZmS-wl0aKA6R-WUn-3/view">Thesis Paper</a></li>
+        </ul>
+        <a class="back-top" href="#top">&uarr; Back to top</a>
+      </section>
+
       <!-- ===== PROJECT TEMPLATE: One discrete project section ===== -->
-      <section class="project" id="project-one">
+      <section class="project" id="project-two">
         <h2>3D Reconstruction of Coronary Angiograms</h2>
         <p class="project-meta">Lead Developer/Co-Designer &middot; Python, Google Colab, Unity, C#</p>
         <p>
@@ -69,13 +95,21 @@
         </p>
         <ul class="project-links">
           <li><a href="https://eac-services.host.ualr.edu/projects/epscor-dart-wp/epscor-dart-angiography/">Project on EAC Website</a></li>
-          <li><a href = "">Video Walkthrough</a></li>
+          <li><a href = "https://drive.google.com/file/d/1656_83fGymsYT3dWpGG-8uRVwpd084E6/view?usp=sharing">Video Walkthrough</a></li>
         </ul>
         <a class="back-top" href="#top">&uarr; Back to top</a>
       </section>
       <!-- ===== END TEMPLATE ===== -->
 
-      <section class="project" id="project-two">
+            <section class="project" id="project-four">
+        <h2>Unity Networking Template</h2>
+        <p class="project-meta"> Developer &middot; C#, Unity</p>
+        <p>Topography Collaboration recieved much interest from prospective clients, but lacked the abstraction to be easily integrated as a core feature of new projects. The Networking Template project was an effort to package the core features of Topography Collaboration into a drag-and-drop solution for future projects. It also included the ability to import 3D objects from a remote server to be displayed within the application.</p>
+        <p><strong>Contribution:</strong> Using the experience gained from transitioning Topography Collaboration to Mirror Networking, I developed the core of the template, focusing on generalized player models pilotable through any control scheme. I then integrated the remote 3D object import code with the template.</p>
+        <a class="back-top" href="#top">&uarr; Back to top</a>
+      </section>
+
+      <section class="project" id="project-three">
         <h2>Topography Collaboration</h2>
         <p class="project-meta">Maintainer/Developer &middot; C#, Unity</p>
         <p>Originally built as a collboration between Dr. Krista Lewis and the EAC as a way to view a large LIDAR scan of a UNESCO World Heritage archaeological site in Oman, Topography Collaboration became a test-bed for multi-user, multi-control-scheme XR experiences. Users are able to connect to a central server with a variety of different XR capable devices, each user leveraging the unique abilities of their device to view and interact with the world. </p>
@@ -86,11 +120,16 @@
         <a class="back-top" href="#top">&uarr; Back to top</a>
       </section>
 
-      <section class="project" id="project-three">
-        <h2>Unity Networking Template</h2>
+
+
+        <section class="project" id="project-five">
+        <h2>Campus 360</h2>
         <p class="project-meta"> Developer &middot; C#, Unity</p>
-        <p>Topography Collaboration recieved much interest from prospective clients, but lacked the abstraction to be easily integrated as a core feature of new projects. The Networking Template project was an effort to package the core features of Topography Collaboration into a drag-and-drop solution for future projects. It also included the ability to import 3D objects from a remote server to be displayed within the application.</p>
-        <p><strong>Contribution:</strong> Using the experience gained from transitioning Topography Collaboration to Mirror Networking, I developed the core of the template, focusing on generalized player models pilotable through any control scheme. I then integrated the remote 3D object import code with the template. Much of the development time was spent fixing bugs related to concurrency between the 3D objects imported into a scene.</p>
+        <p>Campus 360 was a COVID-era effort to continue work despite the pandemic, creating projects that did not require developers or users to put on VR headsets. This spun into a series of projects focused on creating virtual tours using 360 degree images, allowing users to tour a physical space from their phone or computer.</p>
+        <p><strong>Contribution:</strong> Campus 360 was my first large team development effort. My primary contributions were the fast-travel map and camera rotation marking systems. The fast travel map allows users to choose any image node from a map of the UA Little Rock campus and instantly view that node. The camera rotation marking system allows developers to mark where the camera should be facing when a user enters a node, ensuring that the camera is never facing something random or uninteresting after a node transition.</p>
+        <ul class="project-links">
+          <li><a href="https://eac-services.host.ualr.edu/projects/project-360/campus-360/">Take the tour here!</a></li>
+        </ul>
         <a class="back-top" href="#top">&uarr; Back to top</a>
       </section>
     </div>
